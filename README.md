@@ -1,4 +1,4 @@
-symphony_utilities
-==================
+3Degrees Symphony Utilities
+===========================
 
-Our Symphony utility toolbelt
+Please see the comments in each utility for their respective instructions.
