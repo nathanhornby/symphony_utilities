@@ -3,7 +3,7 @@
 
 <!--
 
-  Mantissa to Integer
+  	Mantissa to Integer
 	************************************************
 
 	- Author: Nathan Hornby @ 3Degrees Agency <http://www.3degreesagency.com>
