@@ -3,7 +3,7 @@
 
 <!--
 
-  	Mantissa to Integer
+	Mantissa to Integer
 	************************************************
 
 	- Author: Nathan Hornby @ 3Degrees Agency <http://www.3degreesagency.com>
@@ -84,15 +84,15 @@
 			<xsl:variable name="mantissa" select="substring(substring-after($decimated-value, '.'), 1, 2)"/>
 			<xsl:choose>
 				<xsl:when test="substring($mantissa, 1, 1) = 0">
-					<xsl:value-of select="concat(substring($mantissa, 2, 1) , $suffix)"/>
+					<xsl:value-of select="substring($mantissa, 2, 1)"/><xsl:copy-of select="$suffix"/>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:value-of select="concat($mantissa , $suffix)"/>
+					<xsl:value-of select="$mantissa"/><xsl:copy-of select="$suffix"/>
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:when>
 		<xsl:otherwise>
-			<xsl:value-of select="concat($prefix , substring-before($decimated-value, '.') , '.' , substring(substring-after($decimated-value, '.'), 1, 2))"/>
+			<xsl:copy-of select="$prefix"/><xsl:value-of select="concat(substring-before($decimated-value, '.') , '.' , substring(substring-after($decimated-value, '.'), 1, 2))"/>
 		</xsl:otherwise>
 	</xsl:choose>
 
