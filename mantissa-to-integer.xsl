@@ -7,8 +7,8 @@
 	************************************************
 
 	- Author: Nathan Hornby @ 3Degrees Agency <http://www.3degreesagency.com>
-	- Version: 1.0
-	- Release date: 7th March 2013
+	- Version: 1.1
+	- Release date: 8th March 2013
 
 
 	What's it for?
